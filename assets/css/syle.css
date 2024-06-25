@@ -1,0 +1,330 @@
+:root{
+    --common-font:"Josefin Sans", sans-serif;
+    --icon-color:#11161E;
+    --cmn-clr:#FF6F61;
+    --roboto: "Roboto", sans-serif;
+    --light-color:#ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+h1,h2,h3,h4,h5,h6,span,ul,p,ol{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:var(--common-font);
+}
+
+html{
+    font-size: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.primary-btn{
+padding: 14px 23px;
+background-color: var(--cmn-clr);
+font-weight: 600;
+font-size: 18px;
+line-height: 167%;
+text-align: center;
+color:var(--light-color) ;
+display: inline-block;
+}
+
+/* NAV START */
+nav ul li{
+    padding:0 2.2rem;
+    display: inline-block;
+}
+nav .navbar-nav{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+nav ul li a{
+    padding: 0 !important;
+    display: inline-block;
+}
+
+nav .icons{
+    display: flex;
+    margin-bottom: 0 !important;
+    padding-left:0 !important;
+    font-size: 2.1rem;
+}
+nav .icons li{
+    padding: 0 1rem;
+}
+nav .dropdown-toggle::after{
+    display: none;
+}
+nav .icons li a{
+    color: var(--icon-color) ;
+    transition: 0.2s;
+} 
+nav .icons li a:hover{
+    color: var(--cmn-clr);
+}
+nav .down-arrow{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.55rem;
+}
+nav .cart-count{
+    position: relative;
+}
+nav .cart-count .count{
+    background-color: var(--cmn-clr);
+    color: #fff;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.6rem;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -0.1rem;
+    right:0.1rem;
+}
+nav .navbar-toggler{
+    border: none !important;
+    font-size: 1.8rem;
+    color: var(--cmn-clr);
+}
+/* *********************** Dropdown ***************************/
+nav .shop-link{
+    position: relative;
+}
+nav .sub-menu li{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+nav .sub-menu{
+    z-index: 1231;
+    position: absolute;
+    left:0;
+    top: 14rem;
+    width: 23rem;
+    box-shadow: 0.3rem 0.3rem 3rem #ccc;
+    background-color: #FFF;
+    opacity: 0;
+    transition: 0.4s;
+    visibility: hidden;
+    padding: 0 !important;
+}
+nav .shop-link:hover .sub-menu{
+    top: 2.5rem;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .sub-menu li {
+    padding:10PX;
+    font-weight:300;
+    transition: 0.5s;
+} 
+nav .sub-menu li:hover{
+    background-color: var(--cmn-clr);
+    color: #000;
+}
+nav .sub-menu li a{
+    color: #000;
+    font-size: 2.3rem;
+}
+nav .navbar-nav li a{
+    transition: 0.2s;
+}
+#navbarSupportedContent ul li .nav-link:hover {
+    color: var(--cmn-clr);
+}
+
+/**************** Dropdown end *****************/
+.offcanvas-body ul li{
+   text-align: left;
+   margin-bottom: 2.5rem;
+   font-weight: 40rem;
+   font-size: 2.1rem;
+   transition: 0.3s;
+   color:#000000;
+}
+nav .nav-link{
+    font-size: 1.8rem;
+}
+
+ nav ul .bag li a i{
+  color: #000;
+
+  
+
+}
+nav .nav-item .submenu li:hover a {
+    color: #000;
+}
+
+.offcanvas-body .dropdown-menu{
+    padding:0;
+    width: 100%;
+    border: none;
+    border-radius: none;
+    box-shadow: 0.3px 0.3px 3rem #ccc;
+    position: absolute;
+}
+
+.offcanvas-body .dropdown-menu .dropdown-item{
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+.offcanvas-body .nav-item ul li{
+    margin-bottom: 0;
+    border-bottom: 0.1rem solid #cccccc;  
+}
+.offcanvas-body .nav-item ul li a{
+    padding:1rem  0;
+    transition: 0.6s;
+}
+.offcanvas-body .nav-item ul li a:hover{
+    background-color: #FF6F61;
+}
+.offcanvas-body li{
+    list-style-type: none;
+}
+.offcanvas-body{
+    position: relative;
+    padding:2rem;
+}
+.offcanvas-body span{
+    position: absolute;
+    right: 2%;
+    top: 0;
+    transition: .3s;
+}
+
+.offcanvas-body .nav-item{
+    margin-bottom: 0;
+}
+ .offcanvas-body .dropdown-toggle::after{
+    display: none;
+}
+
+/**************************  SEARCH  ********************* */
+ 
+.search-box{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.search-box.active_search{
+    opacity: 1;
+    visibility: visible;
+}
+
+.search-box input{
+    border: none;
+    outline: none;
+    border-radius: 50px 0px 0px 50px;
+    padding:10px 30px ;
+    width: 0px;
+    position: relative;
+    background-color: transparent;
+    border: 0.2rem solid var(--cmn-clr);
+    color: white;
+    transition: 0.5s;
+    font-size: 16px;
+}
+
+.search-box input.active_input{
+    width: 50rem;
+}
+.search-box input::placeholder{
+    color: #fff;
+}
+.search-box  .test{
+    position: relative;
+}
+
+.search-box button{
+    border: 2px solid #FF6F61;
+    outline: none;
+    position: absolute;
+    padding:10px 30px ;
+    background-color: #FF6F61;
+    border-radius: 0 50px 50px 0;
+    color: white;
+   
+}
+
+.search-box .cross-btn{
+    width: 6rem;
+    height: 6rem;
+    background-color: transparent;
+    border: 0.2rem solid var(--cmn-clr);
+    color: #fff;
+    text-align: center;
+    line-height: 6.5rem;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    transition: 0.5s;
+}
+.search-box .cross-btn:hover{
+    background-color: var(--cmn-clr);
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+
+/**************************  SEARCH End  ********************* */
+/**************************  BANNER START  ********************* */
+#banner .slide{
+    height: 800px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+#banner .slide .bannerCnt h4{
+font-weight: 600;
+font-size: 18px;
+line-height: 156%;
+color: #1d1d1d;
+}
+#banner .slide .bannerCnt h2{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 116%;
+    color: #1d1d1d;
+    margin: 14px 0 16px ;
+}
+#banner .slide .bannerCnt p{
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: #1d1d1d;
+}
+#banner .slide .bannerCnt a{
+margin-top: 30px;
+padding: 13px 37px;
+}
+
+/**************************  BANNER END  ********************* */

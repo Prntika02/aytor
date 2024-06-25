@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor- Home</title>
+      <!-- Fav icon-->
+       <link rel="shortcut icon" href="./assets/img/Group 1.png" type="img/x-icon">
+ <!-- Google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+   <!-- SLICK css -->
+    <link rel="stylesheet" href="./assets/css/slick-theme.min.css">
+    <!-- Bootstrap css -->
+     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- CUSTOM css -->
+     <link rel="stylesheet" href="./assets/css/syle.css">
+    <!-- RESPONSIVE LINK -->
+     <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+<body>
+    <!--****************** NAV START *********************-->
+    
+    <nav class="navbar navbar-expand-lg shadow">
+      <div class="container">
+        
+        <span  class="d-lg-none navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i>      
+        </span>
+
+        <a class="navbar-brand" href="#">
+          <img class="w-75" src="./assets/img/Logo.png" alt="">
+        </a>
+
+        <ul class="icons d-lg-none">
+          <li class="cart-count">
+            <a href="">
+                <span class="count">0</span>
+                <span><i class="fa-solid fa-bag-shopping"></i></span>
+            </a>
+        </li>
+        </ul>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown shop-link">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shop
+                <span class="down-arrow"><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Shop-Grid</a></li>
+                  <li><a href="#">Shop-Details</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                </ul>
+             
+            </li>
+            <li class="nav-item dropdown shop-link">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+                <span class="down-arrow"><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+                <ul class="sub-menu">
+                  <li><a href="#">About - Us</a></li>
+                  <li><a href="#">Shop-Grid</a></li>
+                  <li><a href="#">Shop-Details</a></li>
+                  <li><a href="#">Compare</a></li>
+                  <li><a href="#">Cart</a></li>
+                  <li><a href="#">Checkout</a></li>
+                  <li><a href="#">Wishlist</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Newsletter</a></li>
+                  <li><a href="#">404</a></li>
+                </ul>
+             
+            </li>
+            <li class="nav-item dropdown shop-link">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Features
+                <span class="down-arrow"><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Men's Collection</a></li>
+                  <li><a href="#">Women's Collection</a></li>
+                </ul>
+             
+            </li>
+            <li class="nav-item dropdown shop-link">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Blogs
+                <span class="down-arrow"><i class="fa-solid fa-angle-down"></i></span>
+              </a>
+                <ul class="sub-menu">
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Blog - Classic</a></li>
+                  <li><a href="#">Blog - Classic With Sidebar</a></li>
+                  <li><a href="#">Blog - Details</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+           
+          </ul>
+         <ul class="icons">
+          <li>
+          <a href=""><span class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></span></a>
+          </li>
+          <li>
+          <a href=""><span><i class="fa-solid fa-user"></i></span></a>
+          </li>
+          <li>
+              <a href=""><span><i class="fa-solid fa-heart"></i></span></a>
+          </li>
+          <li class="cart-count">
+              <a href="">
+                  <span class="count">0</span>
+                  <span><i class="fa-solid fa-bag-shopping"></i></span>
+              </a>
+          </li>
+         </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header ms-3 me-5">
+        <h5 id="offcanvasRightLabel"><a href="#">
+          <img class="w-75" src="./assets/img/Logo.jpg" alt="">
+        </a></h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+        </button>
+     
+      </div>
+      <div class="offcanvas-body ms-3 ">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+        <li class="nav-item dropdown">
+       
+            <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+              Shop
+              <span><i class="fa-solid fa-chevron-down"></i></span>
+            </a>
+          
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Shop - Grid</a></li>
+            <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+            <li><a class="dropdown-item" href="#">Compare</a></li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="#">Checkout</a></li>
+            <li><a class="dropdown-item" href="#">Wishlist</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+       
+          <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+            Pages
+            <span><i class="fa-solid fa-chevron-down"></i></span>
+          </a>
+        
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">About - Us</a></li>
+          <li><a class="dropdown-item" href="#">Shop - Grid</a></li>
+          <li><a class="dropdown-item" href="#">Shop - Details</a></li>
+          <li><a class="dropdown-item" href="#">Compare</a></li>
+          <li><a class="dropdown-item" href="#">Cart</a></li>
+          <li><a class="dropdown-item" href="#">Checkout</a></li>
+          <li><a class="dropdown-item" href="#">Wishlist</a></li>
+          <li><a class="dropdown-item" href="#">Blog</a></li>
+          <li><a class="dropdown-item" href="#">Contact</a></li>
+          <li><a class="dropdown-item" href="#">Newsletter</a></li>
+          <li><a class="dropdown-item" href="#">404</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+       
+        <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+          Features
+          <span><i class="fa-solid fa-chevron-down"></i></span>
+        </a>
+      
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Features</a></li>
+        <li><a class="dropdown-item" href="#">Mens's Collection</a></li>
+        <li><a class="dropdown-item" href="#">Women's Collection</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown">
+       
+      <a class="nav-link dropdown-toggle" href="#"  data-bs-toggle="dropdown" aria-expanded="false">
+        Blogs
+        <span><i class="fa-solid fa-chevron-down"></i></span>
+      </a>
+    
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Blogs</a></li>
+      <li><a class="dropdown-item" href="#">Blog - Classic</a></li>
+      <li><a class="dropdown-item" href="#">Blog - Classic With Sidebar</a></li>
+      <li><a class="dropdown-item" href="#">Blog - Details</a></li>
+    </ul>
+  </li>
+      </div>
+      
+    </div> 
+  
+      <!-- SEARCH -->
+      <div class="search-box">
+        <span class="cross-btn"><i class="fa-solid fa-xmark"></i></span>
+        <form action="" class="test">
+            
+            <input class="input-test" type="text" placeholder="Search">
+            <button><span style="font-size: 16px;"><i class="fa-solid fa-magnifying-glass"></i></span></button>
+        </form>
+      </div>
+    <!-- SEARCH END  -->
+
+
+     <!--****************** NAV END *********************-->
+     <!--****************** BANNER START *********************-->
+
+<section id="banner">
+  <div class="bannerSlider">
+        <div class="slide" style="background:url(./assets/img/Mask\ here\ \(1\).jpg);">
+         
+          <div class="container h-100">
+           
+            <div class="row  align-items-center h-100">
+              <div class="bannerCnt col-5" >
+                <h4>Mega Sale</h4>
+                <h2>Up To 35% Off</h2>
+                 <p>Objectively incubate enabled innovation through leveraged mindshare. Competently.</p>
+                 <a href="#" class="primary-btn">Shop Now <span><i class="fa-solid fa-arrow-right-long"></i></span></a>
+          </div>
+            </div>
+         </div>
+       </div>
+  </div>
+</section>
+
+     <!--****************** BANNER END *********************-->
+
+    
+      <!-- JQUERY --> 
+      <script src="./assets/js/jquery-3.7.1.min.js"></script>
+      <!-- FONT AWESOME -->
+       <script src="./assets/js/all.min.js"></script>
+      <!-- SLICK SLIDER -->
+      <script src="./assets/js/slick.min.js"></script>
+      <!-- BOOTSTRAP -->
+       <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <!-- CUSTOM JS -->
+       <script src="./assets/js/app.js"></script>
+       
+</body>
+</html>
