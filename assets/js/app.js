@@ -32,7 +32,12 @@ $(function(){
     $('.bannerSlider').slick({
         arrows: false,
         dots:true,
-        dotsclass:'bannerDots container'
+        dotsClass:'bannerDots container',
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+
     })
 
 })
+
